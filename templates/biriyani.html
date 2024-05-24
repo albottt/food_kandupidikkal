@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ classification }} Nutrition Facts</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/bir.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <h4>FOOD SHAZAM</h4>
+            <h1>{{ classification }}</h1>
+            <img src="{{ url_for('static',filename='styles/cb.jpg') }}" alt="A pan of chicken biryani">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="nutritional-facts">
+            <h2>Nutritional Facts</h2>
+            <div class="info-section">
+                <p>Calories</p>
+                <p>406.8 kcal</p>
+            </div>
+            <div class="info-section">
+                <p>Sugar Content</p>
+                <p>0.8 g</p>
+            </div>
+            <div class="info-section_carb">
+                <p>Carbohydrates</p>
+                <p>47.7 g</p>
+            </div>
+            <div class="info-section_pro">
+                <p>Protein</p>
+                <p>20.6 g</p>
+            </div>
+            <div class="info-section_fat">
+                <p>Fat</p>
+                <p>14.9 g</p>
+            </div>
+            <div class="pie-chart-container">
+                <div class="pie-chart"></div>
+            </div>
+            <p>(in a 100g meal)</p>
+        </div>
+    </div>
+
+
+    <div class="ingredients">
+        <h3>
+            Basic Ingredients
+        </h3>
+        <div class="info-section">
+            <p>rice</p>
+        </div>
+        <div class="info-section">
+            <p>chicken</p>
+        </div>
+        <div class="info-section">
+            <p>masala</p>
+        </div>
+        <div class="info-section">
+            <p>cinnamon</p>
+        </div>
+    </div>
+   
+</body>
+</html>
